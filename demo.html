@@ -1,0 +1,60 @@
+<header class="px-4 py-2">
+    <div class="m-1">
+        <h1>EdArT</h1>
+    </div>
+    <div class="m-0">
+        <a href="#" style="font-size: 1.4rem; text-decoration: none; color: black;">
+            <i class="fa-solid fa-bars"></i> <span style="margin: 0 1em;">More</span>
+        </a>
+    </div>
+    <div class="flex-column"> 
+        <span style="padding: .5em 1em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none; background-color: rgb(143, 140, 140);">Edison</span>
+        <img src="Jjk.webp" class="rounded-circle mb-1" style="height: 70px; width: 68px; object-fit: cover;" alt="profile">
+    </div>
+</header>
+<style>
+    /* Header styling */
+header {
+    background-color: rgb(11, 232, 240);
+    display: flex;
+    justify-content: space-between; /* Space out the content within the header */
+    align-items: center;
+    width: 40vw; /* Set header width to 40vw */
+    height: 100px;
+    border: none;
+    border-radius: 0.5em;
+    position: fixed;
+    top: 0; /* Keep the header at the top */
+    left: 50%; /* Move the header 50% from the left */
+    transform: translateX(-50%); /* Center the header horizontally */
+    box-shadow: 0 0 3px black;
+    z-index: 2;
+}
+
+/* Hide the flex-column content */
+.flex-column {
+    display: none;
+}
+
+/* Example fixed boxes */
+#left-box,
+#right-box {
+    position: fixed;
+    top: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: #0b939c;
+    z-index: 1;
+}
+
+/* Left box */
+#left-box {
+    left: 0;
+}
+
+/* Right box */
+#right-box {
+    right: 0;
+}
+
+</style>

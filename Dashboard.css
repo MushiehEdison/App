@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ink free;
+}
+body{
+    background: linear-gradient(rgb(107, 107, 107),rgb(184, 183, 183), rgb(153, 153, 153))  no-repeat center center/cover;
+    height: 100%;
+}
+/* header */
+header{
+    background-color: rgb(249, 249, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 100px;
+    border: none;
+    border-radius: 0.5em;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    box-shadow: 0 0 3px black;
+    z-index: 1;
+}
+.flex-column {
+    display: none;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.flex-column{
+    display: none;
+}
+/* block one having navigation elements on the left ---------------------*/
+#block-1 {
+    background-color: rgb(252, 255, 252);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    z-index: 23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5em;
+    transition: 1s;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link i {
+    margin-right: 0.5rem; /* Adjust space between icon and text */
+}
+
+
+/* block n having posts in the center ------------------------------------------------------*/
+#n-block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding: 0 2rem; 
+    top: 5em;
+    z-index: 0;
+    position: relative;
+}
+
+#block-n {
+    background-color: rgb(249, 249, 250);
+    border: none;
+    border-radius: 0.5em;
+}
+/*  user and time ago posted --------------post------  */
+#post{
+    display: flex; 
+    justify-content: space-between;
+}
+#reactions i{
+    font-size: 1.5rem;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+/* .comment{
+    display: flex;
+    justify-content: space-between;
+} */
+.comment input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.7em 2em;
+    width: 50%;
+}
+.comment input:focus{
+    outline: none;
+}
+.comment i{
+    margin-left:3em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+/* block three having notification and suggestion elements on the right ----------------------------------------------*/
+#block-3 {
+    background-color: rgb(252, 250, 250);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.5em;
+    transition: 1s;
+}
+/* search */
+
+.form-floating input[type="search"]:focus {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
+}
+.form-floating input[type="search"].form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+#search-icon {
+    color: rgb(9, 10, 9); 
+    font-size: 1.2rem; 
+}
+.form-floating label {
+    top: 10px;
+    left: 0; 
+    transform: translateX(60%);
+    pointer-events: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; 
+    appearance: none; 
+}
+/* Add a custom 'x' button */
+input[type="search"]::-webkit-search-cancel-button {
+    content: url('rectangle-xmark-solid.svg'); /* Custom icon for the 'x' button */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+/* notification messages -------------------------------------------- */
+#notif{
+    display: flex; 
+    justify-content: space-between;
+}
+#notifications{
+    border: none;
+    border-radius: 10px;
+    background: rgb(202, 201, 201);
+    width: 100%; 
+    max-height: 70%; 
+    overflow-x:auto;
+    overflow-y: auto;
+    white-space: nowrap; 
+}
+/* bottom bar from middle to small screen */
+.m-0 ul{
+    display: none;
+}
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    #block-1, #block-3 {
+        display: none; /* Hide blocks on medium and smaller screens */
+    }
+    #n-block {
+        width: 80%;
+        max-width: 80%;
+        padding: 0 1rem;
+        transition: 2s;
+    }
+    /* bottom bar from middle to small screen */
+    .m-0 ul{
+        display: relative;
+        background-color: rgb(250, 250, 250);
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        box-shadow: 0 0 3px black;
+        transition: 0.3s;
+    }
+    .m-0 ul li i{
+        color: rgb(7, 7, 7);
+        font-size: 1.5rem;
+        transition: 1s;
+    }
+}
+@media (max-width: 990px){
+     #n-block{
+        width: 65%;
+        max-width: 80%;
+        margin: 0;
+        transition: 1s;   
+    }
+    .flex-column{
+        display: block;
+        transition: 1s;
+    }
+    header .m-0{
+        display: none;
+        transition: 1s;
+    }
+}
+@media (max-width: 590px){
+    #n-block{
+        width: 100%;
+        max-width: 100%;
+        margin: 0; 
+        transition: 1s;  
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        transition: 1s;
+    }
+    header .m-0{
+        display: none;
+        transition: 1s;
+    }
+    .flex-column{
+        display: block;
+        transition: 1s;
+    }
+}
+
