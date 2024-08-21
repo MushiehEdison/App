@@ -1,0 +1,17 @@
+.container{
+    border: 1px solid;
+    padding: 3em;
+}
+#notif{
+    display: flex; 
+    justify-content: space-between;
+    width: 70%;
+}
+#notifications{
+    border: none;
+    border-radius: 10px;
+    background: rgb(202, 201, 201);
+    width: 100%; 
+    max-height: 70%; 
+    white-space: nowrap; 
+}

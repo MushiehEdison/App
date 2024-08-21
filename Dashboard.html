@@ -15,7 +15,7 @@
         <div id="block-1" class="col-3 d-none d-lg-block p-3">
             <div class="m-1 text-center">
                 <img src="Jjk.webp" class="rounded-circle mb-4" style="height: 100px; width: 95px; object-fit: cover;" alt="profile">
-                <h2 class="mt-2" style="font-size: 1.5rem; font-weight: 700; color: rgb(19, 19, 19);">Username</h2>
+                <h2 class="mt-2" style="font-size: 1.5rem; font-weight: 700; color: rgb(19, 19, 19);"><a href="Account.html" style="text-decoration: none; color: black;">Edison</a></h2>
                 <!-- Navigation links -->
                 <ul class="nav flex-column mt-5" style="font-size: 1.4rem;">
                     <li class="nav-item py-4">
@@ -24,7 +24,7 @@
                         </a>
                     </li>
                     <li class="nav-item py-3">
-                        <a class="nav-link d-flex align-items-center" href="#" style="color: black;">
+                        <a class="nav-link d-flex align-items-center" href="message.html" style="color: black;">
                             <i class="fa-solid fa-message me-2"></i> Message
                         </a>
                     </li>
@@ -55,7 +55,7 @@
                     <a href="#" style="font-size: 1.4rem; text-decoration: none; color: black;"><i class="fa-solid fa-bars"></i> <span style="margin: 0 1em;">More</span> </a>
                 </div>
                 <div class="flex-column"> 
-                    <span style=" padding: .5em 1em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none; background-color: rgb(143, 140, 140);">Edison</span>
+                    <span style=" padding: .5em 1em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none;"><a href="Account.html" style="text-decoration: none; color: black;">Edison</a></span>
                     <img src="Jjk.webp" class="rounded-circle mb-1" style="height: 70px; width: 68px; object-fit: cover;" alt="profile">
                 </div>
                 
@@ -155,7 +155,11 @@
                         <div class="m-0" id="reactions" style="display: flex; justify-content: space-between;">
                             <div id="like-comment">
                                 <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-comment"></i>
+                                <!-- container ---------------- -->       
+                                    <a type="button" id="popoverButton" title="Comment" data-bs-toggle="popover" data-bs-html="true">
+                                        <i class="fa-regular fa-comment" style="font-size: 1.5rem;"></i>
+                                    </a>
+                                <!-- end ofcomment -->
                             </div>
                             <div id="save">
                                 <i class="fa-solid fa-download"></i>
@@ -223,36 +227,57 @@
              <div class="my-5  ">
                 <h3 class="h3"> Suggestions</h3>
                 <!-- suggestions -->
-                <div class="d-flex py-2 ">
-                    <div class="m-0">
-                        <img src="my-dressup-darling-1.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
-                        <span class="mb-4" style="font-size: 1rem; font-weight: 700;">@MarineKitagawa</span>
+
+                <div class="suggestion-col">
+                    <div class="d-flex py-2 ">
+                        <div class="m-0">
+                            <img src="my-dressup-darling-1.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style="font-size: 1rem; font-weight: 700;">@MarineKitagawa</span>
+                        </div>
+                        <div class="btn mx-2">
+                            <button type="button" class="btn btn-outline-dark">follow</button>
+                        </div>
                     </div>
-                    <div class="btn mx-2">
-                        <button type="button" class="btn btn-outline-dark">follow</button>
+                    <div class="d-flex py-2 ">
+                        <div class="m-0">
+                            <img src="IMG_20230920_215627_384.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@sakura</span>
+                        </div>
+                        <div class="btn mx-2">
+                            <button type="button" class="btn btn-outline-dark">follow</button>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex py-2 ">
-                    <div class="m-0">
-                        <img src="IMG_20230920_215627_384.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
-                        <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@sakura</span>
+                    <div class="d-flex py-2 ">
+                        <div class="m-0">
+                            <img src="main-qimg-6bb22f68984eadc2a5bc7f2b49e31afd-pjlq.jpeg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@Thors</span>
+                        </div>
+                        <div class="btn mx-2">
+                            <button type="button" class="btn btn-outline-dark">follow</button>
+                        </div>
                     </div>
-                    <div class="btn mx-2">
-                        <button type="button" class="btn btn-outline-dark">follow</button>
+                    <div class="d-flex py-2 ">
+                        <div class="m-0">
+                            <img src="movie-3.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@Kageyama</span>
+                        </div>
+                        <div class="btn mx-2">
+                            <button type="button" class="btn btn-outline-dark">follow</button>
+                        </div>
                     </div>
-                </div>
-                <div class="d-flex py-2 ">
-                    <div class="m-0">
-                        <img src="untitled-design-2023-03-16t134717-542-1600x900.jpeg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
-                        <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@Seta and setsuko</span>
-                    </div>
-                    <div class="btn mx-2">
-                        <button type="button" class="btn btn-outline-dark">follow</button>
+                    <div class="d-flex py-2 ">
+                        <div class="m-0">
+                            <img src="sukuna-uses-his-domain-expansion-in-jujutsu-kaisen.jpg" class="rounded-circle " style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style=" font-size: 1rem; font-weight: 700;">@Rymen sukuna</span>
+                        </div>
+                        <div class="btn mx-2">
+                            <button type="button" class="btn btn-outline-dark">follow</button>
+                        </div>
                     </div>
                 </div>
              </div>
              <!-- Notifications  -->
-              <div class="col">
+              <div class="notif-col">
                 <h3 class="h3"> Notifications</h3>
                 <!-- notifications recieved ----------------------------- -->
                  <div class="container" id="notifications">
@@ -274,6 +299,19 @@
                     <div class="d-flex ">
                         <div class="m-0">
                             <img src="Family.jpg" class="rounded-circle mb-1" style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                            <span class="mb-4" style=" padding:  1em; border-radius: 25px; font-size: 1rem; font-weight: 700;">@tanjiro</span>
+                        </div>
+                        <div class="time" style="font-weight: 700; margin-top: 1em;">1d ago</div>
+                    </div> 
+                    <div class="Message">
+                        <p> Your video have been uploaded</p>
+                    </div>                  
+                </div>
+
+                <div  id="notif" class=" flex-column py-1">
+                    <div class="d-flex ">
+                        <div class="m-0">
+                            <img src="thorfinn.jpg" class="rounded-circle mb-1" style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
                             <span class="mb-4" style=" padding:  1em; border-radius: 25px; font-size: 1rem; font-weight: 700;">@tanjiro</span>
                         </div>
                         <div class="time" style="font-weight: 700; margin-top: 1em;">1d ago</div>
@@ -308,20 +346,51 @@
                         <p> we've recieved your comments , thank you for feedback </p>
                     </div>                  
                 </div>
-
                  </div>
               </div> 
             </div>
+            <!-- Notifications on small screen devices  ------------------------------>
+            <!-- <div class="notif-header" style="display: none;">
+                Notifications
+                <span class="close">&times;</span>
+            </div>
+            <div class="content">
+                <div class="scrollable">
                    
+                    <div  id="notif" class=" flex-column py-1">
+                        <div class="d-flex ">
+                            <div class="m-0">
+                                <img src="movie-3.jpg" class="rounded-circle mb-1" style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                                <span class="mb-4" style=" padding:  1em; border-radius: 25px; font-size: 1rem; font-weight: 700;">@tanjiro</span>
+                            </div>
+                            <div class="time" style="font-weight: 700; margin-top: 1em;">1d ago</div>
+                        </div> 
+                        <div class="Message">
+                            <p> we've recieved your comments , thank you for feedback </p>
+                        </div>                  
+                    </div>
+
+                    <div  id="notif" class=" flex-column py-1">
+                        <div class="d-flex ">
+                            <div class="m-0">
+                                <img src="Jjk.webp" class="rounded-circle mb-1" style="height: 50px; width: 48px; object-fit: cover;" alt="profile">
+                                <span class="mb-4" style=" padding:  1em; border-radius: 25px; font-size: 1rem; font-weight: 700;">@tanjiro</span>
+                            </div>
+                            <div class="time" style="font-weight: 700; margin-top: 1em;">1d ago</div>
+                        </div> 
+                        <div class="Message">
+                            <p>@sakura liked the image you posted </p>
+                        </div>                  
+                    </div>
+                </div>
+            </div> -->
+                
+            <!-- end of notifications ------------------------------- -->
         </div>
     </div>
   </div>
-
-
-
-
   <!-- bottom bar from middle to small screen -->
-   <div class="m-0">
+<div class="m-0">
     <ul class="nav">
         <li class="nav-item py-3">
             <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
@@ -340,7 +409,7 @@
         </li>
                 
     </ul>
-   </div>
+</div>
 <!-- end of bottom bar from middle to small screen -->
   <script src="js/bootstrap.bundle.js"></script>
   <script src="Dashboard.js"></script>

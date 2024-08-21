@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="message.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Message</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1" style="height: 100vh;">
+                <ul class="nav flex-column" style="font-size: 1.4rem;">
+                    <li class="nav-item py-4 my-2">
+                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                            <i class="fas fa-home me-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item py-3 my-2">
+                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                            <i class="fa-solid fa-message me-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item py-3 my-2">
+                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                            <i class="fa-solid fa-bell me-2"></i> 
+                        </a>
+                    </li>
+                    <li class="nav-item py-3 my-2">
+                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                            <i class="fa-solid fa-video me-2"></i> 
+                        </a>
+                    </li>
+                    <li class="nav-item py-3 my-2">
+                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                            <i class="fa-solid fa-square-plus me-2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4" style=" padding: 2em ; height: 100vh;">
+                <div id="user" class="flex-column pb-3">    
+                    <img src="Jjk.webp" class="rounded-circle mb-1" style="height: 70px; width: 65px; object-fit: cover;" alt="profile">
+                    <span style=" padding: 1.5em 0.3em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none;">
+                    <a href="Account.html" style="text-decoration: none; color: rgb(54, 54, 54);">Edison Kurosaki</a>
+                    </span>
+                </div>
+                <!-- search --------------------------- -->
+                <div class="my-4 search-container ">
+                    <input type="search" class="form-control" id="search" placeholder="Search ..." name="search">
+                    <button id="search-button" type="button">
+                         <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- contacts ---------------- -->
+                <div class="container">
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="spy.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Anya</p>
+                                <p class="contact-status">Waku waku</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="Einar & Thorfinn.jpeg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Kendrick Lamar</p>
+                                <p class="contact-status">Nigga</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="untitled-design-2023-03-16t134717-542-1600x900.jpeg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Spirited Away </p>
+                                <p class="contact-status">Studio Ghilbili</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="Sport.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Hinata</p>
+                                <p class="contact-status">GO GO KARASUNO</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="Sukuna-vs-Mahoraga_Portada.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Sukuna</p>
+                                <p class="contact-status">Fuga</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="contact-avatar">
+                                <img src="Vs.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">Thorfinn</p>
+                                <p class="contact-status">I have no enemies</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of contacts -->
+            </div>
+            <!-- chat box ------------------------ -->
+            <div class="col-7" style=" height: 100vh;">
+                <div class="chatbox">
+                    <div class="chat-header">
+                        <div class="contact-avatar">
+                            <img src="Canute1021.webp" alt="Profile Picture">
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-name">Thorfinn</p>
+                        </div>
+                        
+                    </div>
+                    <div class="chat-area">
+                        <div class="message received">
+                            <p>Hello! How are you?</p>
+                        </div>
+                        <div class="message sent">
+                            <p>I'm good, thanks! How about you?</p>
+                        </div>
+                        <div class="message received">
+                            <p>I'm doing well, thank you!</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="     Message ...'">
+                        <button type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ink Free', cursive;
+    box-sizing: border-box;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #070707;
+    margin: 2em 0;
+}
+
+/* Profile Picture */
+.profile-pic {
+    max-width: 150px;
+    margin-bottom: 1em;
+}
+
+/* Profile Info */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+}
+
+.stat .count {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat .label {
+    font-size: 14px;
+    color: #8e8e8e;
+    display: block;
+}
+
+/* Username Section */
+.username-section {
+    margin-bottom: 15px;
+}
+
+/* Bio */
+.bio {
+    font-size: 14px;
+    color: #262626;
+    margin-top: 1em;
+}
+
+/* User Posts Section */
+#n-block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-width: 600px;
+    padding: 0 1rem;
+    top: 1em;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 100px; /* Add space for the bottom bar */
+}
+
+#block-n {
+    background-color: rgb(249, 249, 250);
+    border: none;
+    border-radius: 0.5em;
+}
+
+/* User and Time Ago Posted */
+#post {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#reactions i {
+    font-size: 1.5rem;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.comment input {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.7em 1em;
+    width: 60%;
+}
+
+.comment i {
+    margin-left: 1em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.comment input:focus {
+    outline: none;
+}
+/* bottom navigation bar on small screens  =-------------------- */
+.m-0 ul{
+    display: none;
+}
+/* Responsiveness */
+@media (min-width: 1068px) {
+    .profile-header {
+        margin: 0 20vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-header {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+
+    .profile-info {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .stats {
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+}
+/* bottom navigation bar on small screens -----------------------  */
+@media (max-width: 1000px) {
+    .m-0 ul {
+        background-color: rgb(250, 250, 250);
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        box-shadow: 0 0 3px black;
+        transition: 0.3s;
+        padding: 0;
+        margin: 0;
+    }
+
+    .m-0 ul li i {
+        color: rgb(7, 7, 7);
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+}
