@@ -14,17 +14,17 @@
             <div class="col-1" style="height: 100vh;">
                 <ul class="nav flex-column" style="font-size: 1.4rem;">
                     <li class="nav-item py-4 my-2">
-                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                        <a class="nav-link d-flex align-items-center flex-column" href="Dashboard.html" style="color: black;">
                             <i class="fas fa-home me-2"></i>
                         </a>
                     </li>
                     <li class="nav-item py-3 my-2">
-                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                        <a class="nav-link d-flex align-items-center flex-column" href="message.html" style="color: black;">
                             <i class="fa-solid fa-message me-2"></i>
                         </a>
                     </li>
                     <li class="nav-item py-3 my-2">
-                        <a class="nav-link d-flex align-items-center flex-column" href="#" style="color: black;">
+                        <a class="nav-link d-flex align-items-center flex-column" href="Notifications.html" style="color: black;">
                             <i class="fa-solid fa-bell me-2"></i> 
                         </a>
                     </li>
@@ -40,15 +40,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-4" style=" padding: 2em ; height: 100vh;">
+            <div class="col-4" style="padding: 2em; height: 100vh;">
                 <div id="user" class="flex-column pb-3">    
                     <img src="Jjk.webp" class="rounded-circle mb-1" style="height: 70px; width: 65px; object-fit: cover;" alt="profile">
-                    <span style=" padding: 1.5em 0.3em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none;">
+                    <span style="padding: 1.5em 0.3em; border-radius: 25px; font-size: 1rem; font-weight: 700; margin: 0 1em; border: none;">
                     <a href="Account.html" style="text-decoration: none; color: rgb(54, 54, 54);">Edison Kurosaki</a>
                     </span>
                 </div>
                 <!-- search --------------------------- -->
-                <div class="my-4 search-container ">
+                <div class="my-4 search-container">
                     <input type="search" class="form-control" id="search" placeholder="Search ..." name="search">
                     <button id="search-button" type="button">
                          <i class="fas fa-search"></i>
@@ -117,7 +117,7 @@
                 <!-- end of contacts -->
             </div>
             <!-- chat box ------------------------ -->
-            <div class="col-7" style=" height: 100vh;">
+            <div class="col-7" style="height: 100vh;">
                 <div class="chatbox">
                     <div class="chat-header">
                         <div class="contact-avatar">
@@ -126,7 +126,6 @@
                         <div class="contact-info">
                             <p class="contact-name">Thorfinn</p>
                         </div>
-                        
                     </div>
                     <div class="chat-area">
                         <div class="message received">
@@ -140,14 +139,13 @@
                         </div>
                     </div>
                     <div class="chat-input">
-                        <input type="text" placeholder="     Message ...'">
+                        <textarea placeholder="Message ..." rows="3"></textarea>
                         <button type="button">
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <script src="js/bootstrap.bundle.js"></script>
