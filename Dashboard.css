@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: ink free;
+
 }
 body{
     background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255),white)  no-repeat center center/cover;
@@ -9,7 +10,7 @@ body{
 }
 /* header */
 header{
-    background-color: rgb(249, 249, 250);
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,7 +36,7 @@ h1{
 }
 /* block one having navigation elements on the left ---------------------*/
 #block-1 {
-    background-color: rgb(252, 255, 252);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +48,8 @@ h1{
     justify-content: center;
     padding: 2rem;
     border: none;
-    border-radius: 0.5em;
+    border-right:1px solid black ;
+    border-radius: 0.1em;
     transition: 1s;
 }
 .nav-link {
@@ -74,7 +76,7 @@ h1{
 }
 
 #block-n {
-    background-color: rgb(249, 249, 250);
+    background-color: white;
     border: none;
     border-radius: 0.5em;
 }
@@ -104,7 +106,7 @@ h1{
 }
 /* block three having notification and suggestion elements on the right ----------------------------------------------*/
 #block-3 {
-    background-color: rgb(252, 250, 250);
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
@@ -116,7 +118,8 @@ h1{
     justify-content: center;
     padding: 2rem;
     border: none;
-    border-radius: 0.5em;
+    border-left: 1px solid black;
+    border-radius: 0.1em;
     transition: 1s;
 }
 /* search */
@@ -168,7 +171,7 @@ input[type="search"]::-webkit-search-cancel-button {
 #notifications{
     border: none;
     border-radius: 10px;
-    background: rgb(202, 201, 201);
+    background: rgb(175, 175, 175);
     width: 100%; 
     height: 400px !important;
     overflow-y: scroll !important;
@@ -239,7 +242,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     /* bottom bar from middle to small screen */
     .m-0 ul {
-        background-color: rgb(250, 250, 250);
+        background-color: white;
         border: none;
         display: flex;
         justify-content: space-around;

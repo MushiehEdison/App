@@ -14,7 +14,7 @@ body {
 form {
     background: linear-gradient(rgb(153, 153, 153), rgb(190, 190, 190),rgb(202, 202, 202), white);
     border: none;
-    width: 80vw; 
+    width: 500px; 
     max-width: 400px;
     padding: 3em  !important; 
     border-radius: 1rem; 

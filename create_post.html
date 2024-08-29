@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Content</title>
+    <link rel="stylesheet" href="create_post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section">
+            <h2>Upload Tweet</h2>
+            <textarea id="tweet-input" placeholder="What's on your mind?" maxlength="280"></textarea>
+            <button class="upload-btn"><i class="fas fa-share-square"></i> Post Tweet</button>
+        </div>
+        
+        <div class="upload-section">
+            <h2>Upload Image/Video</h2>
+            <div class="icon-container">
+                <label for="image-input" class="icon-label"><i class="fas fa-image"></i></label>
+                <label for="video-input" class="icon-label"><i class="fas fa-video"></i></label>
+            </div>
+            <input type="file" id="image-input" accept="image/*" style="display: none;">
+            <input type="file" id="video-input" accept="video/*" style="display: none;">
+            <div id="preview" class="preview-box">Preview will appear here</div>
+            <button class="upload-btn"><i class="fas fa-upload"></i> Post Image/Video</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('image-input').addEventListener('change', function(event) {
+    previewMedia(event.target.files[0]);
+});
+
+document.getElementById('video-input').addEventListener('change', function(event) {
+    previewMedia(event.target.files[0]);
+});
+
+function previewMedia(file) {
+    const preview = document.getElementById('preview');
+    preview.innerHTML = '';
+    
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        const media = document.createElement(file.type.startsWith('image') ? 'img' : 'video');
+        media.src = e.target.result;
+        media.style.display = 'block';
+        if (file.type.startsWith('video')) {
+            media.controls = true;
+        }
+        preview.appendChild(media);
+    };
+    
+    reader.readAsDataURL(file);
+    
+    preview.style.display = 'flex';
+}
+
+    </script>
+</body>
+</html>
